@@ -1,0 +1,7 @@
+C:\Users\Jesus\source\repos\TareaSeba\TareaSeba\bin\Debug\TareaSeba.exe.config
+C:\Users\Jesus\source\repos\TareaSeba\TareaSeba\bin\Debug\TareaSeba.exe
+C:\Users\Jesus\source\repos\TareaSeba\TareaSeba\bin\Debug\TareaSeba.pdb
+C:\Users\Jesus\source\repos\TareaSeba\TareaSeba\obj\Debug\TareaSeba.csprojAssemblyReference.cache
+C:\Users\Jesus\source\repos\TareaSeba\TareaSeba\obj\Debug\TareaSeba.csproj.CoreCompileInputs.cache
+C:\Users\Jesus\source\repos\TareaSeba\TareaSeba\obj\Debug\TareaSeba.exe
+C:\Users\Jesus\source\repos\TareaSeba\TareaSeba\obj\Debug\TareaSeba.pdb
