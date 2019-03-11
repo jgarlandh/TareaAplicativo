@@ -10,16 +10,20 @@ namespace TareaSeba
     {
         static void Main(string[] args)
         {
+
+
+
             #region
             //Persona p = new Persona();
-            //p.RUTIdentificador = 168911955;
+            //p.RUTIdentificador = "168911955";
             //p.Nombre = "Jesus";
             //p.Apellidos = "Garland Herrera";
             //p.Edad = 25;
             //p.FechaDeNacimiento = DateTime.Parse("20/04/1993");
             //p.Sexo = 'M';
 
-            //p.MostrarPersona();
+            //Imprimir imp = new Imprimir(p);
+            //imp.imprimirPersona();
             #endregion
 
             List<Persona> personasIngresadas = new List<Persona>();
@@ -73,8 +77,9 @@ namespace TareaSeba
                                 Console.WriteLine("");
 
                                 Console.WriteLine("");
-                                Console.WriteLine("");
-                                Console.ReadLine();
+                                Console.WriteLine("Por favor, ingrese el RUT de la persona a buscar");
+                                //personasIngresadas.Find(x => x.RUTIdentificador == Console.ReadLine()).MostrarPersona;
+
 
                                 //Console.WriteLine("\nFind: Part where name contains \"seat\": {0}",
                                 //parts.Find(x => x.PartName.Contains("seat")));

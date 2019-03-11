@@ -26,12 +26,13 @@ namespace TareaSeba
         //    //Sexo = "";
         //}
         #endregion
-        public long RUTIdentificador { get; set; }
+        public string RUTIdentificador { get; set; }
         public string Nombre { get; set; }
         public string Apellidos { get; set; }
         public int Edad { get; set; }
         public DateTime FechaDeNacimiento { get; set; }
         public char Sexo { get; set; }
+        public string Nacionalidad { get; set; }
 
         public void MostrarPersona()
         {
