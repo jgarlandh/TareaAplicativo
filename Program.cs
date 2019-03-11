@@ -23,65 +23,66 @@ namespace TareaSeba
             #endregion
 
             List<Persona> personasIngresadas = new List<Persona>();
-            String input;
             int valorIngresado = 0;
-            int comodin = 0;
 
             Console.WriteLine("Bienvenido a la consola de Personas");
             Console.WriteLine("");
 
             while (valorIngresado < 5)
             {
-                Console.WriteLine("El aplicativo consta de las siguientes opciones:");
-                Console.WriteLine("1. Añadir persona");
-                Console.WriteLine("2. Eliminar persona");
-                Console.WriteLine("3. Buscar persona");
-                Console.WriteLine("4. Listar persona");
-                Console.WriteLine("5. Salir");
-                Console.WriteLine("Por favor, ingrese la opción seleccionada, digitando el número correspondiente");
-                input = Console.ReadLine();
+                inicio1:
 
-                comodin = int.Parse(input);
-
-                if (comodin => 1 && comodin < 6)
+                try
                 {
-                    valorIngresado = comodin;
+                    inicio2:
 
-                    switch (valorIngresado)
+                    Console.WriteLine("El aplicativo consta de las siguientes opciones:");
+                    Console.WriteLine("1. Añadir persona");
+                    Console.WriteLine("2. Eliminar persona");
+                    Console.WriteLine("3. Buscar persona");
+                    Console.WriteLine("4. Listar persona");
+                    Console.WriteLine("5. Salir");
+                    Console.WriteLine("Por favor, ingrese la opción seleccionada, digitando el número correspondiente");
+                    valorIngresado = int.Parse(Console.ReadLine());
+
+                    if (valorIngresado >= 1 && valorIngresado < 6)
                     {
-                        case 1:
+                        switch (valorIngresado)
+                        {
+                            case 1:
 
-                            break;
+                                break;
 
-                        case 2:
-                            break;
+                            case 2:
+                                break;
 
-                        case 3:
-                            break;
+                            case 3:
+                                break;
 
-                        case 4:
-                            break;
+                            case 4:
+                                break;
 
-                        case 5:
-                            break;
+                            case 5:
+                                break;
+                        }
                     }
+                    else
+                    {
+                        Console.WriteLine("Los valores ingresados no corresponden a un valor entre 1 y 5");
+                        Console.WriteLine("Por favor, intentelo nuevamente");
+                    }
+                    goto inicio2;
+
+
                 }
-                else
+                catch (FormatException)
                 {
                     Console.WriteLine("Los valores ingresados no corresponden a un valor entre 1 y 5");
                     Console.WriteLine("Por favor, intentelo nuevamente");
                 }
+                goto inicio1;
 
             }
-
-            
-
-
-
-
-
-
-
 
         }
     }
