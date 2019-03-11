@@ -30,11 +30,9 @@ namespace TareaSeba
 
             while (valorIngresado < 5)
             {
-                inicio1:
 
                 try
                 {
-                    inicio2:
 
                     Console.WriteLine("El aplicativo consta de las siguientes opciones:");
                     Console.WriteLine("1. Añadir persona");
@@ -74,16 +72,12 @@ namespace TareaSeba
                                 Console.WriteLine("3. Buscar persona");
                                 Console.WriteLine("");
 
-                                List<string> provincies = GetProvincias();
+                                Console.WriteLine("");
+                                Console.WriteLine("");
+                                Console.ReadLine();
 
-                                string patternSearch = "na";
-
-                                string resultFind = provinces.Find(
-                                     delegate (string current)
-                                     {
-                                         return current.Contains(patternSearch);
-                                     }
-                                );
+                                //Console.WriteLine("\nFind: Part where name contains \"seat\": {0}",
+                                //parts.Find(x => x.PartName.Contains("seat")));
 
                                 break;
 
@@ -111,7 +105,6 @@ namespace TareaSeba
                         Console.WriteLine("Los valores ingresados no corresponden a un valor entre 1 y 5");
                         Console.WriteLine("Por favor, intentelo nuevamente");
                     }
-                    goto inicio2;
 
 
                 }
@@ -120,7 +113,6 @@ namespace TareaSeba
                     Console.WriteLine("Los valores ingresados no corresponden a un valor entre 1 y 5");
                     Console.WriteLine("Por favor, intentelo nuevamente");
                 }
-                goto inicio1;
 
             }
 
