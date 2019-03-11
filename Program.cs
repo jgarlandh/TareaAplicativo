@@ -51,18 +51,58 @@ namespace TareaSeba
                         {
                             case 1:
 
+                                Console.WriteLine("");
+                                Console.WriteLine("Ha seleccionado la opción:");
+                                Console.WriteLine("1. Añadir persona");
+                                Console.WriteLine("");
+
                                 break;
 
                             case 2:
+
+                                Console.WriteLine("");
+                                Console.WriteLine("Ha seleccionado la opción:");
+                                Console.WriteLine("2. Eliminar persona");
+                                Console.WriteLine("");
+
                                 break;
 
                             case 3:
+
+                                Console.WriteLine("");
+                                Console.WriteLine("Ha seleccionado la opción:");
+                                Console.WriteLine("3. Buscar persona");
+                                Console.WriteLine("");
+
+                                List<string> provincies = GetProvincias();
+
+                                string patternSearch = "na";
+
+                                string resultFind = provinces.Find(
+                                     delegate (string current)
+                                     {
+                                         return current.Contains(patternSearch);
+                                     }
+                                );
+
                                 break;
 
                             case 4:
+
+                                Console.WriteLine("");
+                                Console.WriteLine("Ha seleccionado la opción:");
+                                Console.WriteLine("4. Listar persona");
+                                Console.WriteLine("");
+
                                 break;
 
                             case 5:
+
+                                Console.WriteLine("");
+                                Console.WriteLine("Ha seleccionado la opción:");
+                                Console.WriteLine("5. Salir");
+                                Console.WriteLine("");
+
                                 break;
                         }
                     }
