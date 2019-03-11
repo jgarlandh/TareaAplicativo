@@ -14,16 +14,18 @@ namespace TareaSeba
 
 
             #region
-            //Persona p = new Persona();
-            //p.RUTIdentificador = "168911955";
-            //p.Nombre = "Jesus";
-            //p.Apellidos = "Garland Herrera";
-            //p.Edad = 25;
-            //p.FechaDeNacimiento = DateTime.Parse("20/04/1993");
-            //p.Sexo = 'M';
+            Persona p = new Persona();
+            p.RUTIdentificador = "168911955";
+            p.Nombre = "Jesus";
+            p.Apellidos = "Garland Herrera";
+            p.Edad = 25;
+            p.FechaDeNacimiento = DateTime.Parse("20/04/1993");
+            p.Sexo = 'M';
 
-            //Imprimir imp = new Imprimir(p);
-            //imp.imprimirPersona();
+            Console.WriteLine(p.ToString());
+
+            Imprimir imp = new Imprimir(p);
+            imp.imprimirPersona();
             #endregion
 
             List<Persona> personas = new List<Persona>();

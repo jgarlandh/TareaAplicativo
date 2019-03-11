@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace TareaSeba
 {
-    class Class1
+    public  class PersonaDAO
     {
+        Persona personaDAO = new Persona();
+
+        public void personaNueva()
+        {
+
+            //personaDAO.RUTIdentificador(Console.ReadLine());
+
+        }
+
+
     }
 }
