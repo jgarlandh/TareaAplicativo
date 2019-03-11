@@ -56,11 +56,11 @@ namespace TareaSeba
         {
             Console.WriteLine("\n");
             mostrarRUT();
-            this.mostrarNombre();
-            this.mostrarEdad();
-            this.mostrarFechaDeNacimiento();
-            this.mostrarSexo();
-            this.mostrarNacionalidad();
+            mostrarNombre();
+            mostrarEdad();
+            mostrarFechaDeNacimiento();
+            mostrarSexo();
+            mostrarNacionalidad();
             Console.WriteLine("\n");
         }
 

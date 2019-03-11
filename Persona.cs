@@ -33,14 +33,5 @@ namespace TareaSeba
         public DateTime FechaDeNacimiento { get; set; }
         public char Sexo { get; set; }
         public string Nacionalidad { get; set; }
-
-        public void MostrarPersona()
-        {
-            Console.WriteLine("Nombre Completo: " + Nombre + " " + Apellidos);
-            Console.WriteLine("RUT: " + RUTIdentificador);
-            Console.WriteLine("Fecha de Nacimiento: " + FechaDeNacimiento);
-            Console.WriteLine("Sexo: " + Sexo);
-        }
-
     }
 }

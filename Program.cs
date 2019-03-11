@@ -26,7 +26,7 @@ namespace TareaSeba
             //imp.imprimirPersona();
             #endregion
 
-            List<Persona> personasIngresadas = new List<Persona>();
+            List<Persona> personas = new List<Persona>();
             int valorIngresado = 0;
 
             Console.WriteLine("Bienvenido a la consola de Personas");
